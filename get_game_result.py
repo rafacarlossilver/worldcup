@@ -23,7 +23,7 @@ def estatisticasTime(time,pais):
 
 
 df = pd.read_csv('results.csv') #partidas internacionais desde 1800
-dfwc = pd.read_csv('worldcup2018.csv') 
+dfwc = pd.read_csv('worldcup2018.csv')
 
 
 #verifica vencedor
