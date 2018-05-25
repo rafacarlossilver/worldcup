@@ -3,8 +3,7 @@
 
 import pandas as pd
 import csv
-
-
+import sys
 
 
 
@@ -24,7 +23,7 @@ def estatisticasTime(time,pais):
 
 
 df = pd.read_csv('results.csv') #partidas internacionais desde 1800
-dfwc = pd.read_csv('worldcup2018.csv')
+dfwc = pd.read_csv('worldcup2018.csv') 
 
 
 #verifica vencedor
@@ -44,16 +43,16 @@ def loser(row):
 
 df['loser'] = df.apply(lambda row: loser(row), axis=1)
 
-#separando os ultimos resultados
 
-#print(dfwc)
-
-
+grupo = sys.argv[1]
+print("Grupo")
+print (grupo)
 with open('worldcup2018.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     for row in readCSV:
-
         pais = row[0]
+        if row[1] != grupo:
+            continue
         print(pais)
         timeEmcasa = df[df['home_team'] == pais ]
         timeForaCasa = df[df['away_team'] == pais ]
