@@ -9,7 +9,7 @@ from score import gerarScore
 diretorioRaiz =  "/var/www/python/worldcup/"
 
 
-df = pd.read_csv('results.csv') #partidas internacionais desde 1800
+df = pd.read_csv('results.csv')
 dfwc = pd.read_csv('worldcup2018.csv')
 
 

@@ -6,7 +6,9 @@ def gerarScore(df,grupo):
     import csv
     import sys
     import statistics
+    import numpy as np
     total = []
+
     with open('worldcup2018.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for row in readCSV:
@@ -29,15 +31,29 @@ def gerarScore(df,grupo):
 
             porcentagemVitorias = float(len(vitorias.winner.values))/ totalPartidas
             aproveitamento = porcentagemVitorias * 100
+            score = time[time['away_score'] != 0]
+            scoreEmCasa = time[time['home_score'] != 0]
+
+
+            sumScore = []
+            sumScore = np.append(score.away_score.values,scoreEmCasa.home_score.values)
+            print(sumScore)
 
 
 
 
+            total.append([grupo,pais,len(vitorias.winner.values),len(derrotas.loser.values), len(empates.winner.values),totalPartidas,statistics.variance(sumScore),aproveitamento])
+
+
+
+
+	    '''
             if pais == 'Russia':
                 score = time[time['home_score'] != 0]
                 total.append([grupo,pais,len(vitorias.winner.values),len(derrotas.loser.values), len(empates.winner.values),totalPartidas,statistics.variance(score.home_score.values),aproveitamento])
 
             else:
                 score = time[time['away_score'] != 0]
-                total.append([grupo,pais,len(vitorias.winner.values),len(derrotas.loser.values), len(empates.winner.values),totalPartidas,statistics.variance(score.home_score.values),aproveitamento])
+	   '''
+
     return total
