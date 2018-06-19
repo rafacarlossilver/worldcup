@@ -45,7 +45,7 @@ for grupo in grupos:
         #print(type(score))
 
 
-columns = ['Grupo','Selecao', 'Vitorias', 'Derrotas','Empates','Partidas','Score',"Aproveitamento"]
+columns = ['Grupo','Selecao', 'Vitorias', 'Derrotas','Empates','Partidas','Score Pro','Score Contra',"Aproveitamento"]
 dfTotal = pd.DataFrame(totalScore, columns=columns)
 
 dfTotal = dfTotal.sort_values(["Grupo"])
