@@ -7,7 +7,9 @@ Pt_BR: Script para Tentar prever os resultados dos jogos da copa do mundo
 #### Table of Contents
 
 1. [Dependencies](#dependencies)
-2. [To start the Script](#tostartsthescript)
+2. [Prerequisites](#prerequisites)
+3. [Starting](#starting)
+4. [Authors](#authors)
 
 
 
@@ -19,16 +21,6 @@ Pt_BR: Script para Tentar prever os resultados dos jogos da copa do mundo
 * sys: https://docs.python.org/3/library/sys.html
 * statistics: https://docs.python.org/3/library/statistics.html
 
-#### To start the Script
-python get_game_result.py
-
-
-
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 * [Pandas](https://pandas.pydata.org/) - pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
@@ -43,18 +35,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```
 python get_game_result.py
-
 ```
 
 Will return
 
 ```
 done
-
 ```
 
 
-At the initial you are generating a score.csv file with the scores of the teams
+At the initial you are generating a score.csv file with the scores and statistics of the teams
 
 ## Authors
 
