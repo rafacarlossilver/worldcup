@@ -1,6 +1,7 @@
 # WorldCup
 
 En: cript to Try to predict the world cup's matches' results
+
 Pt_BR: Script para Tentar prever os resultados dos jogos da copa do mundo
 
 
@@ -48,6 +49,6 @@ At the initial you are generating a score.csv file with the scores and statistic
 
 ## Authors
 
-* **Rafael Silverio** - (https://github.com/PurpleBooth)
+* **Rafael Silverio** - (https://github.com/rafacarlossilver)
 * **Emerson Prado** - (https://github.com/EmersonPrado)
 * **Pedro Prado** - (https://github.com/pedromprado)
