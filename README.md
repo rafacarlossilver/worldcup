@@ -7,16 +7,17 @@ Pt_BR: Script para Tentar prever os resultados dos jogos da copa do mundo
 #### Table of Contents
 
 1. [Dependencies](#dependencies)
-2. [To start the Script](#To start the Script)
+2. [To start the Script](#tostartsthescript)
 
 
 
 #Dependencies
-pandas: https://pandas.pydata.org/
-csv: https://docs.python.org/3/library/csv.html
-numpy: http://www.numpy.org/
-sys: https://docs.python.org/3/library/sys.html
-statistics: https://docs.python.org/3/library/statistics.html
+
+* pandas: https://pandas.pydata.org/
+* csv: https://docs.python.org/3/library/csv.html
+* numpy: http://www.numpy.org/
+* sys: https://docs.python.org/3/library/sys.html
+* statistics: https://docs.python.org/3/library/statistics.html
 
 #To start the Script
 python get_game_result.py
